@@ -1,4 +1,3 @@
-// Assignment code here
 // create click function
 // create prompt for password criteria
 // create criteria for password which include length and type of characters (upper/lower, numeric, special characters)
@@ -6,18 +5,29 @@
 // password should be generated that meets all criteria
 // display password in an alert or written somewhere on page
 
-// Get references to the #generate element
-var generateBtn = document.querySelector("#generate");
+var char = ("abcdefghijklmnopqrstuvwxyz!@#$%&");
+var char2 = ("ABCDEFGHIJKLMONPQRSTUVWXY");
+var char3 = ("1234567890");
+var char4 = ("!@#$%&");
 
-// Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+var passwordLength = "";
+var charPrompt
+var char2prompt
+var char3Prompt
+var char4Prompt
 
-  passwordText.value = password;
 
-}
-console.log ()
 
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+console.log ();
+
+// var generateBtn = document.querySelector("#generate");
+
+// function writePassword() {
+//   var password = generatePassword();
+//   var passwordText = document.querySelector("#password");
+
+//   passwordText.value = password;
+
+// }
+
+// generateBtn.addEventListener("click", writePassword);
