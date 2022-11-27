@@ -16,6 +16,11 @@ var char2prompt
 var char3Prompt
 var char4Prompt
 
+function generatePassword() {
+    var passwordLength = parseInt(prompt("Password Lenght : Must be between 8 and 128 character"));
+    for
+}
+
 
 
 console.log ();
