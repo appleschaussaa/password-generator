@@ -18,12 +18,19 @@ var char4Prompt
 
 function generatePassword() {
     var passwordLength = parseInt(prompt("Password Lenght : Must be between 8 and 128 character"));
-    for
-}
+    while ( passwordLength > 8 || passwordLength < 128) {
+        alert("keep password length between 8-128 characters");
+        var passwordLength = parseInt(prompt("Password Lenght must be between 8 and 128 character"))
+    }
+    alert("good choice, you password is " + passwordLength + "characters")
 
+}
+var generateBtn = document.querySelector("#generate");
 
 
 console.log ();
+
+generateBtn.addEventListener("click", generatePassword);
 
 // var generateBtn = document.querySelector("#generate");
 
