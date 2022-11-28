@@ -1,6 +1,3 @@
-
-// create prompt for password criteria
-// create criteria for password which include length and type of characters (upper/lower, numeric, special characters)
 // create loop cycle for each step
 // password should be generated that meets all criteria
 // display password in an alert or written somewhere on page
@@ -28,13 +25,17 @@ var char2prompt = confirm("use capital letters?");
 var char3Prompt = confirm("use numbers?");
 var char4Prompt = confirm("use special letters?");
 
-while (charPrompt & char2prompt & char3Prompt & char4Prompt) {
-    
+while (!charPrompt & !char2prompt & !char3Prompt & !char4Prompt) {
+    alert("Please pick what type of characterto use, use one type at minimum")
+    var charPrompt = confirm("use lowercase letter?");
+    var char2prompt = confirm("use capital letters?");
+    var char3Prompt = confirm("use numbers?");
+    var char4Prompt = confirm("use special letters?");
 }
 
 var results = [];
 
-
+    
 
 console.log (results);
 
