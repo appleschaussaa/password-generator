@@ -20,22 +20,33 @@ function generatePassword() {
     }
     alert("good choice, you password is " + passwordLength +  "characters")
 
-var charPrompt = confirm("use lowercase letter?");
-var char2prompt = confirm("use capital letters?");
-var char3Prompt = confirm("use numbers?");
-var char4Prompt = confirm("use special letters?");
+    charPrompt = confirm("use lowercase letter?");
+    char2Prompt = confirm("use capital letters?");
+    char3Prompt = confirm("use numbers?");
+    char4Prompt = confirm("use special letters?");
 
-while (!charPrompt & !char2prompt & !char3Prompt & !char4Prompt) {
+while (!charPrompt && !char2prompt && !char3Prompt && !char4Prompt) {
     alert("Please pick what type of characterto use, use one type at minimum")
     var charPrompt = confirm("use lowercase letter?");
-    var char2prompt = confirm("use capital letters?");
+    var char2Prompt = confirm("use capital letters?");
     var char3Prompt = confirm("use numbers?");
     var char4Prompt = confirm("use special letters?");
 }
 
 var results = [];
 
-    
+    if (charPrompt || char2Prompt || char3Prompt || char4Prompt) {
+        results = results.concat(char || char2 || char3 || char4)
+    }
+    // // if (char2prompt) {
+    //     return "ABCDEFGHIJKLMONPQRSTUVWXY"
+    // }
+    // if (char3Prompt) {
+    //     return "1234567890"
+    // }
+    // if (char4Prompt) {
+    //     return "!@#$%&"
+    // }
 
 console.log (results);
 

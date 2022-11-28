@@ -92,6 +92,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 - [Resource 2](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while) - Helped with learning about while loops as that seems to be the preferred loop type
 - [Resource 3](https://stackoverflow.com/) - seems like when researching solutions, stackoverflow showed up and gave insight on how to write 
 - [Resource 4](https://www.w3schools.com/jsref/jsref_while.asp) - shows that if statements can coincide with while statements
+- [Resource 5](https://betterprogramming.pub/stop-putting-so-many-if-statements-in-your-javascript-3b65aaa4b86b) - shows how to make a clean if statement within a function, tried to make a look up map work but could not
 ​
 **Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 ​
