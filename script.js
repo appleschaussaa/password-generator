@@ -1,4 +1,4 @@
-// create click function
+
 // create prompt for password criteria
 // create criteria for password which include length and type of characters (upper/lower, numeric, special characters)
 // create loop cycle for each step
@@ -11,7 +11,7 @@ var char3 = ("1234567890");
 var char4 = ("!@#$%&");
 var passwordLength = "";
 var charPrompt
-var char2prompt
+var char2Prompt
 var char3Prompt
 var char4Prompt
 
@@ -25,12 +25,20 @@ function generatePassword() {
 
 var charPrompt = confirm("use lowercase letter?");
 var char2prompt = confirm("use capital letters?");
-var char3Prompt = confrim("use numbers?");
+var char3Prompt = confirm("use numbers?");
 var char4Prompt = confirm("use special letters?");
 
+while (charPrompt & char2prompt & char3Prompt & char4Prompt) {
+    
 }
 
-console.log ();
+var results = [];
+
+
+
+console.log (results);
+
+}
 
 var generateBtn = document.querySelector("#generate");
 
