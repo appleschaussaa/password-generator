@@ -1,8 +1,5 @@
-// create loop cycle for each step
-// password should be generated that meets all criteria
-// display password in an alert or written somewhere on page
 
-var char = ("abcdefghijklmnopqrstuvwxyz!@#$%&");
+var char = ("abcdefghijklmnopqrstuvwxyz");
 var char2 = ("ABCDEFGHIJKLMONPQRSTUVWXY");
 var char3 = ("1234567890");
 var char4 = ("!@#$%&");
@@ -25,7 +22,7 @@ function generatePassword() {
     char3Prompt = confirm("use numbers?");
     char4Prompt = confirm("use special letters?");
 
-while (!charPrompt && !char2prompt && !char3Prompt && !char4Prompt) {
+while (!charPrompt && !char2Prompt && !char3Prompt && !char4Prompt) {
     alert("Please pick what type of characterto use, use one type at minimum")
     var charPrompt = confirm("use lowercase letter?");
     var char2Prompt = confirm("use capital letters?");
@@ -35,22 +32,30 @@ while (!charPrompt && !char2prompt && !char3Prompt && !char4Prompt) {
 
 var results = [];
 
-    if (charPrompt || char2Prompt || char3Prompt || char4Prompt) {
-        results = results.concat(char || char2 || char3 || char4)
+    if (charPrompt) {
+        return "abcdefghijklmnopqrstuvwxyz"
     }
-    // // if (char2prompt) {
-    //     return "ABCDEFGHIJKLMONPQRSTUVWXY"
-    // }
-    // if (char3Prompt) {
-    //     return "1234567890"
-    // }
-    // if (char4Prompt) {
-    //     return "!@#$%&"
-    // }
+    if (char2Prompt) {
+        return "ABCDEFGHIJKLMONPQRSTUVWXY"
+    }
+    if (char3Prompt) {
+        return "1234567890"
+    }
+    if (char4Prompt) {
+        return "!@#$%&"
+    }
 
 console.log (results);
 
+var characters = ""
+
+for (let i = 0; i < passwordLength; i++) {
+        characters = characters + results(Math.floor(Math.random() * passwordLength));
+        console.log(characters)
+    }
+    return characters
 }
+
 
 var generateBtn = document.querySelector("#generate");
 
