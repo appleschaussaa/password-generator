@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 ​
 - Solution URL: file:///C:/Users/rober/Desktop/bootcamp/password-generator/index.html
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: https://appleschaussaa.github.io/password-generator/
 ​
 ## My process
 ​
